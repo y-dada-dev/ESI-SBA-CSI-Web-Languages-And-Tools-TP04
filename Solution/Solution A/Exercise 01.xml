@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no" ?>
+
+<liste_acteurs>
+    <!-- Clint Eastwood -->
+    <acteur id="clint">
+        <prenom>Clint</prenom>
+        <nom>Eastwood</nom>
+        <naissance>31 Mai 1930</naissance>
+        <nationalite>américaine</nationalite>
+        <photo alt="Clint Eastwood" alt2="Clint Eastwood" alt3="Clint Eastwood"
+            alt4="Clint Eastwood"/>
+        <site url="http://www.clinteastwood.net/"/>
+
+        <biographie>
+
+            <p> Né d'un père comptable, le jeune Clinton mène avec ses parents une vie de nomade. Il
+                passe son adolescence à Oakland et ne pense pas du tout à devenir acteur. Il fait
+                des petits boulots sans grande conviction. Puis il part à l'armée où il fait des
+                rencontres décisives et obtient du travail chez Universal. Il fait sa première
+                apparition en <annee>1955</annee> dans <film>La Revanche de la créature</film> puis
+                enchaîne les petits rôles dans cinq films où personne ne le remarque véritablement. </p>
+
+            <p> Avec le drame <film>Million dollar baby</film>, le cinéaste obtient une véritable
+                consécration en remportant, douze ans après <film>Impitoyable</film>, l'Oscar du
+                Meilleur film et du Meilleur réalisateur, ses comédiens <refacteur code="hilary"
+                    >Hilary Swank</refacteur> et <refacteur code="morgan">Morgan Freeman</refacteur>
+                repartant avec les statuettes de La Meilleure actrice et du Meilleur second rôle
+                masculin. </p>
+
+
+        </biographie></acteur>
+
+    <!-- Hilary Swank -->
+
+    <acteur id="hilary">
+        <!-- Hilary Swank : le prénom -->
+        <prenom>Hilary</prenom>
+        <!-- Hilary Swank : le nom -->
+        <nom>Swank</nom>
+        <naissance>30 Juillet 1974</naissance>
+        <nationalite>américaine</nationalite>
+        <photo source="hilaryswank.jpg" alt="Hilary Swank"/>
+        <site url="http://www.hilaryswankfan.com/"/>
+
+        <biographie>
+
+            <p> Championne de natation, Hilary Swank s'oriente rapidement vers le métier d'actrice.
+                A l'âge de dix-huit ans, elle fait une courte apparition dans <film>Buffy, tueuse de
+                    vampires</film> en <annee>1992</annee>, une comédie fantastique de Fran Rubel
+                Kuzui, et décroche en <annee>1994</annee> le rôle-titre de <film>Miss Karaté
+                    Kid</film> de Christopher Cain. </p>
+            <p> C'est <film>Boys don't cry</film>, un drame de <realisateur>Kimberly
+                    Peirce</realisateur>, qui la révèle véritablement au grand public en
+                    <annee>2000</annee>. Sa prestation du travesti Brandon Teena lui vaut l'Oscar et
+                le Golden Globe de la Meilleure actrice, les prix d'interprétation des New York Film
+                Critics, Los Angeles Film Critics et Chicago Film Critics, ainsi que le Broadcast
+                Film Critics. </p>
+            <p> En <annee>2005</annee>, elle rafle pour la deuxième fois (et en seulement deux
+                nominations) l'Oscar de la Meilleure actrice grâce à sa performance de boxeuse
+                surentraînée par <refacteur code="clint">Clint Eastwood</refacteur> dans
+                    <film>Million dollar baby</film>. </p>
+        </biographie></acteur>
+
+    <!-- Morgan Freeman -->
+
+    <acteur id="morgan">
+        <prenom>Morgan</prenom>
+        <nom>Freeman</nom>
+        <naissance>1 Juin 1937</naissance>
+        <nationalite>américaine</nationalite>
+        <photo source="freeman.jpg" alt="Morgan Freeman"/>
+
+        <biographie>
+
+            <p> Morgan Freeman est diplômé du lycée de Greenwood, dans le Mississippi. A dix-huit
+                ans, il s'engage dans l'Air Force et, une fois ses obligations militaires
+                accomplies, s'installe en Californie pour étudier la danse et l'art dramatique au
+                Los Angeles City College. C'est à Broadway qu'il fait ses débuts de comédien en
+                    <annee>1967</annee>. </p>
+
+            <p> A 68 ans, il obtient enfin la reconnaissance de la profession en remportant l'Oscar
+                du Meilleur second rôle masculin pour sa prestation d'ancien boxeur borgne dans
+                    <film>Million dollar baby</film> (<annee>2005</annee>) de son fidèle ami
+                    <refacteur code="clint">Clint Eastwood</refacteur>. </p>
+
+        </biographie></acteur>
+
+
+</liste_acteurs>

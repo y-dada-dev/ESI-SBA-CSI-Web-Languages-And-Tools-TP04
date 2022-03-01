@@ -1,0 +1,13 @@
+*//name[number(following::population[last()])>6000000]
+
+//country[name="Algeria"]/border[@length=max(//country[name="Algeria"]/border/@length)]/@country
+
+count(//country[dependent[@country="CN"]])
+
+*//country[dependent[@country="F"]][encompassed [@continent="africa"]]/name
+
+XXX
+
+*//country[count(border)=0]
+
+//country[name="China"]/population[last()]*((//country[name="China"]/religion[text()="Muslim"]/@percentage)/100)

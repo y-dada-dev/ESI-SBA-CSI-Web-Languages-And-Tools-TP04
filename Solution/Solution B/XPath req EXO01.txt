@@ -1,0 +1,54 @@
+
+1.	le noeud racine ;
+2.	tous les descendants de la racine ;
+3.	tous les attributs ;
+4.	tous les noeuds de type texte ;
+5.	les contenus de tous les paragraphes ;
+6.	les paragraphes contenant des éléments important ;
+7.	la référence portant le code siteMarc ;
+8.	tous les deuxièmes auteurs (avec et sans la fonction position, puis sans aucune fonction). 
+9.	les instructions de traitement présentes correspondant à une feuille de style ;
+
+
+
+
+/child::*
+/*
+
+------------------------------------------------------------------------
+/descendant::node()
+//node()
+
+ou à partir de l'élément racine :
+
+/child::*/descendant::node()
+/*//node()
+-------------------------------------------------------------------------
+
+/descendant::*/attribute::*
+//@*
+
+-------------------------------------------------------------------------
+/descendant::text()
+//text()
+--------------------------------------------------------------------------
+/descendant::p/child::text()
+//p/text()
+----------------------------------------------------------------------------
+/descendant::p[child::important]
+//p[important]
+----------------------------------------------------------------------------
+/descendant::référence[attribute::code='siteMarc']
+//référence[@code='siteMarc']
+----------------------------------------------------------------------------
+
+/descendant::*/child::auteur[position()=2]
+//*/auteur[2]
+
+/descendant::auteur[count(preceding-sibling::auteur)=1]
+//auteur[count(preceding::auteur)=1]
+
+/descendant::auteur[(preceding-sibling::auteur) and not(preceding-sibling::auteur/preceding::auteur)]
+//auteur[(preceding-sibling::auteur) and not(preceding-sibling::auteur/preceding-sibling::auteur)]
+
+

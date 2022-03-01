@@ -1,0 +1,70 @@
+/descendant::JOURNEE[attribute::NUMERO < 8]      
+
+//JOURNEE[@NUMERO < 8]
+
+/descendant::JOURNEE[attribute::NUMERO=8]/preceding-sibling::JOURNEE  {NON journée numéro 8 n'existait pas}
+
+//JOURNEE[@NUMERO=8]/preceding-sibling::JOURNEE {NON journée numéro 8 n'existait pas}
+
+********************************************************************************
+
+/descendant::JOURNEE[attribute::NUMERO=2]/child::RENCONTRE
+
+//JOURNEE[@NUMERO=2]/RENCONTRE
+
+********************************************************************************
+/descendant::JOURNEE/child::RENCONTRE[position()=1]
+
+//JOURNEE/RENCONTRE[1]
+
+*********************************************************************************
+
+ /descendant::JOURNEE[attribute::NUMERO=1]/child::RENCONTRE[attribute::DOMICILE='equipeA']/attribute::EXTERIEUR | /descendant::JOURNEE[attribute::NUMERO=1]/child::RENCONTRE[attribute::EXTERIEUR='equipeA']/attribute::DOMICILE
+
+ //JOURNEE[@NUMERO=1]/RENCONTRE[@DOMICILE='equipeA']/@EXTERIEUR | //JOURNEE[@NUMERO=1]/RENCONTRE[@EXTERIEUR='equipeA']/@DOMICILE
+
+*************************************************************************************
+
+/descendant::RENCONTRE[attribute::DOMICILE='equipeA']/attribute::EXTERIEUR | /descendant::RENCONTRE[attribute::EXTERIEUR='equipeA']/attribute::DOMICILE
+
+//RENCONTRE[@DOMICILE='equipeA']/@EXTERIEUR | //RENCONTRE[@EXTERIEUR='equipeA']/@DOMICILE
+
+*************************************************************************************
+
+/descendant::RENCONTRE[attribute::SCORED='-']
+
+//RENCONTRE[@SCORED='-']
+
+*************************************************************************************
+
+/descendant::RENCONTRE[attribute::DOMICILE='equipeA' and attribute::SCORED!='-'
+                       and attribute::SCORED=attribute::SCOREE]
+
+//RENCONTRE[@DOMICILE='equipeA' and @SCORED!='-' and number(@SCORED)=number(@SCOREE)]
+
+**************************************************************************************
+
+count(/descendant::RENCONTRE[attribute::SCORED!='-' and number(attribute::SCORED)=number(attribute::SCOREE)])
+
+100 * count(/descendant::RENCONTRE[attribute::SCORED!='-' and number(attribute::SCORED)=number(attribute::SCOREE)])
+      div count(/descendant::RENCONTRE[attribute::SCORED!='-'])
+----------------------------------------------------------------------------------------
+
+count(//RENCONTRE[@SCORED!='-' and number(@SCORED)=number(@SCOREE)])
+
+100*count(//RENCONTRE[@SCORED!='-' and number(@SCORED)=number(@SCOREE)]) 
+          div count(//RENCONTRE[@SCORED!='-'])
+
+*****************************************************************************************
+
+count(//RENCONTRE[number(@SCORED)>number(@SCOREE)])
+
+
+100*count(//RENCONTRE[number(@SCORED)>number(@SCOREE)) 
+          div count(//RENCONTRE[@SCORED!='-'])
+*****************************************************************************************
+
+count(//RENCONTRE[number(@SCORED)<number(@SCOREE)])
+
+100*count(//RENCONTRE[number(@SCORED)<number(@SCOREE)]) 
+          div count(//RENCONTRE[@SCORED!='-'])

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<CHAMPIONNAT DIVISION="1" SAISON="2010-2011">
+    <JOURNEE NUMERO="1" DATE="01/08/2010">
+        <RENCONTRE DOMICILE="equipeA" EXTERIEUR="equipeB" SCORED="1" SCOREE="1" />
+        <RENCONTRE DOMICILE="equipeC" EXTERIEUR="equipeD" SCORED="0" SCOREE="1" />
+        <RENCONTRE DOMICILE="equipeE" EXTERIEUR="equipeF" SCORED="2" SCOREE="0" />
+    </JOURNEE>
+    <JOURNEE NUMERO="2" DATE="08/08/2010">
+        <RENCONTRE DOMICILE="equipeB" EXTERIEUR="equipeC" SCORED="0" SCOREE="2" />
+        <RENCONTRE DOMICILE="equipeD" EXTERIEUR="equipeE" SCORED="-" SCOREE="-" />
+        <RENCONTRE DOMICILE="equipeF" EXTERIEUR="equipeA" SCORED="0" SCOREE="1" />
+    </JOURNEE>
+    <!-- ..................... -->
+</CHAMPIONNAT>

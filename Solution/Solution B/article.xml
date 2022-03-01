@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<article>
+    <titre> A propos des DTD </titre>
+    <corps>
+   
+        <p> Les DTD, <important>c'est facile</important>, il suffit de lire <cite ref="siteMarc"/>. </p>
+        <p> Il y <y> </y>a aussi de bons livres <cite ref="AmannRigaux"  ref2="a"/>. </p>
+    </corps>
+    <références>
+        <référence code="siteMarc">
+            <nom> Site de Marc Tommasi</nom>
+            <url> http://www.grappa.univ-lille3.fr/~tommasi/Homepage/SurDtd.html </url>
+        </référence>
+        <référence code="AmannRigaux">
+            <intitulé>Comprendre XSLT</intitulé>
+            <auteur>Bernd Amann</auteur>
+            <auteur>Philippe Rigaux</auteur>
+            <date>2002</date>
+            <editor>O'Reilly</editor>
+        </référence>
+        <référence code="AmannRigaux">
+            <intitulé>Comprendre XSLT</intitulé>
+            <auteur>Bernd Amann</auteur>
+            <auteur>Philippe Rigaux</auteur>
+            <date>2002</date>
+            <editor>O'Reilly</editor>
+        </référence>
+        
+        
+    </références>
+</article>

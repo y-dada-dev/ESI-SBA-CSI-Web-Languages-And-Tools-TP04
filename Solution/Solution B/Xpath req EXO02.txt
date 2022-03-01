@@ -1,0 +1,36 @@
+
+//acteur
+----------------------------------------------------------------
+count(//acteur)
+----------------------------------------------------------------
+//comment()
+----------------------------------------------------------------
+/descendant::comment()[position()=2]
+(//coment())[2]
+//comment()[2] NON !!!
+----------------------------------------------------------------
+/descendant::acteur[position()=1]/node()[position()=1]
+//acteur[1]/node()[1]
+----------------------------------------------------------------
+/descendant::acteur[position()=2]/node()[position()=1]
+//acteur[2]/node()[1]
+----------------------------------------------------------------
+/descendant::acteur/*[position()=1 or position()=2]
+//acteur/*[position()<=2]
+----------------------------------------------------------------
+/descendant::acteur/*[position()=last()]
+//acteur/*[last()]
+----------------------------------------------------------------
+/descendant::acteur[attribute::id='clint']
+//acteur[@id='clint']
+----------------------------------------------------------------
+/descendant::acteur[child::prenom/text()='Clint']
+//acteur[prenom='Clint']
+----------------------------------------------------------------
+/descendant::acteur[child::biographie/child::p[last()=2]]/child::nom/text()
+//acteur[biographie/p[last()=2]]/nom/text()
+/descendant::acteur/child::biographie/child::p[last()=2]/ancestor::acteur/child::nom/text()
+
+
+/descendant::acteur[count(child::biographie/child::p)=2]/child::nom/child::text()
+//acteur[count(biographie/p)=2]/nom/text()

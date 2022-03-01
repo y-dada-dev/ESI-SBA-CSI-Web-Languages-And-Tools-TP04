@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mondial>
+    <country car_code="DZ" area="2381740" capital="cty-Algeria-Algiers"
+        memberships="org-LAS org-AU org-OPEC org-UN org-UNESCO">
+        <name>Algeria</name>
+        <population year="1950">8872247</population>
+        <population year="2008">34080030</population>
+        <population_growth>1.88</population_growth>
+        <independence_date date="1962-07-05" from="FR"/>
+        <religion percentage="99">Muslim</religion>
+        <religion percentage="0.5">Christian</religion>
+        <religion percentage="0.5">Jewish</religion>
+        <border country="LAR" length="982"/>
+        <border country="RIM" length="463"/>
+        <border country="MA" length="1559"/>
+        <border country="RN" length="956"/>
+        <border country="TN" length="965"/>
+        <border country="WSA" length="42"/>
+    </country>
+    <country car_code="HK" area="1092" capital="cty-Hongkong" 
+        memberships="org-APEC org-WTO">
+        <name>Hong Kong</name>
+        <population year="1901">283205</population>
+        <population year="2011">7071576</population>
+        <population_growth>0.41</population_growth>
+        <dependent country="CN"/>
+        <religion percentage="10">Christian</religion>
+        <religion percentage="90"> Other</religion>
+        <border country="CN" length="30"/>
+    </country>
+    <!-- autres pays -->
+    <organization id="org-LAS" headq="cty-Egypt-Cairo">
+        <name>League of Arab States</name>
+        <abbrev>LAS</abbrev>
+        <established>1945-03-22</established>
+        <members type="member"
+            country="BRN TN DJI JOR Q IRQ KWT COM RIM MA YE ET LAR UAE DZ SA SP RL SUD OM"/>
+        <members type="observer" country="BR IND ER YV"/>
+    </organization>
+    <!-- autres organisations -->
+</mondial>

@@ -1,0 +1,25 @@
+*//acteur
+
+count(*//acteur )
+
+count(*//comment())
+
+*//comment()[2]
+
+count(//@*)
+
+/liste_acteurs/acteur[1]/child::node()[1]
+
+*//acteur/child::node()[2]|*//acteur/child::node()[4]
+
+*//acteur/child::node()[last()]
+
+*//acteur[@id="clint"]
+
+*//acteur[prenom="Clint"]
+
+*//acteur/child::biographie[count(p)=2]
+
+*//acteur[2]
+
+*//p[1][count(film)>1]/film[2]

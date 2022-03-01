@@ -1,0 +1,31 @@
+1.	Le cinquième livre dans la liste.
+2.	L'auteur du sixième livre dans la liste.
+3.	Le titre du livre qui a gagné en 2000.
+4.	Le nom de l'auteur du livre intitulé "Les Bases de Données Relationnelles ".
+5.	Le titre des livres dont "Salem Fatima" est l'auteur.
+6.	Le nom de tous les auteurs qui ont obtenu un prix depuis 1995.
+7.	Le nombre total de prix décernés.
+
+
+Question 1: le cinquième livre dans la liste : 
+ //award[5]
+--------------------------------------------------------------------------
+Question 2: l'auteur du sixième livre dans la liste :   
+ //award[6]/author
+--------------------------------------------------------------------------
+Question 3: le titre du livre qui a gagné en 2000 :   
+//award[year='2000']/title
+--------------------------------------------------------------------------
+Question 4: Le nom de l'auteur du livre intitulé "XML" : 
+//award[ contains(title/text(),'XML')]/author
+--------------------------------------------------------------------------
+Question 5: Le titre des livres dont "Salem Fatima" est l'auteur.
+//award[author='Salem Fatima']/title
+--------------------------------------------------------------------------
+Question 6: le nom de tous les auteurs qui ont obtenu un prix depuis 1995
+//award[year >= '1995']/author
+--------------------------------------------------------------------------
+Question 7: le nombre total de prix décernés :  
+count(//award)
+
+parent::node()/count(award)
