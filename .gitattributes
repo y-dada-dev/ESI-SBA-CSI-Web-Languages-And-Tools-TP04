@@ -1,0 +1,3 @@
+*.xml linguist-language=XML
+*.dtd linguist-language=DTD
+*.xsd linguist-language=XML
